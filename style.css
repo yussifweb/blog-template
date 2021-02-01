@@ -12,12 +12,24 @@ h2{
     text-transform: uppercase;
 }
 
-.nav{
+/*.nav{
     display: grid;
     grid-template-columns: 2fr 5fr;
     background-color: coral;
     color: floralwhite;
     font-weight: 500;
+}*/
+
+.nav{
+    display: flex;
+    /*grid-template-columns: 2fr 5fr;*/
+    background-color: coral;
+    color: floralwhite;
+    font-weight: 500;
+}
+
+.menu-icon{
+    display: none;
 }
 
 .brand{
@@ -72,11 +84,17 @@ h2{
     display: flex;    
 }
 
-
 .section{
     flex: 5;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .blog-items{
@@ -143,14 +161,7 @@ h2{
     font-size: 1.3rem;
 }
 
-
-.sidebar{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
+/*SIDEBAR*/
 .lists{
     margin-top: 2rem;
 }
@@ -175,140 +186,6 @@ h2{
     padding: 2rem 0  ;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-     h2 {
-         font-weight: 500;
-         font-size: 1.8rem;
-         text-align: center;
-         text-transform: uppercase;
-     }
-
-     .container {
-         /* width: 95%; */
-         margin: 4rem auto;
-         display: block;
-     }
-
-    /* .section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    } */
-
-     .post-img img {
-         width: 200px;
-         height: 150px;
-         border: 2px solid rgb(107, 107, 107);
-         border-radius: 15px;
-         margin-right: 1rem;
-     }
-
-     .blog-item {
-         width: 95%;
-         display: flex;
-         margin: 1rem 0;
-     }
-
-     .blog-content {
-         width: 90%;
-         margin: 1rem auto;
-     }
-
-     .post-title a {
-         text-decoration: none;
-         color: rgb(65, 65, 65);
-         font-size: 1.2rem;
-     }
-
-     .name {
-         font-size: 1rem;
-     }
-
-     .title {
-         font-size: 1.1rem;
-     }
-
-     .list {
-         list-style-type: none;
-         margin: 0.5rem auto;
-     }
-
-     .footer-info {
-         text-align: center;
-         padding: 1rem 0;
-     }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    /* h2 {
-        font-weight: 500;
-        font-size: 1.8rem;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .container {
-        width: 95%;
-        margin: 4rem auto;
-        display: grid;
-        grid-template-columns: 1fr 200px;
-    }
-
-    .post-img img {
-        width: 200px;
-        height: 150px;
-        border: 2px solid rgb(107, 107, 107);
-        border-radius: 15px;
-        margin-right: 1rem;
-    }
-
-    .blog-item {
-        width: 95%;
-        display: flex;
-        margin: 1rem 0;
-    }
-
-    .blog-content {
-        width: 90%;
-        margin: 1rem auto;
-    }
-
-    .post-title a {
-        text-decoration: none;
-        color: rgb(65, 65, 65);
-        font-size: 1.2rem;
-    }
-
-    .name {
-        font-size: 1rem;
-    }
-
-    .title {
-        font-size: 1.1rem;
-    }
-
-    .list {
-        list-style-type: none;
-        margin: 0.5rem auto;
-    }
-
-    .footer-info {
-        text-align: center;
-        padding: 1rem 0;
-    }
-}
 
  /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
@@ -360,5 +237,260 @@ h2{
     .footer-info {
         text-align: center;
         padding: 1rem 0;
-    } */
+    } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+     h2 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /*.container {
+        width: 95%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }*/
+
+    .container{
+        margin: 4rem auto;
+        display: flex;   
+    }
+
+    .section{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        /*margin: 0 auto;*/
+    }
+
+    .post-img img {
+        width: 200px;
+        height: 150px;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 15px;
+        margin-right: 1rem;
+    }
+
+    .blog-item {
+        width: 95%;
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    .blog-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .post-title a {
+        text-decoration: none;
+        color: rgb(65, 65, 65);
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .list {
+        list-style-type: none;
+        margin: 0.5rem auto;
+    }
+
+    .footer-info {
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    /*.container {        
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: auto;
+    }
+*/
+
+    .container{
+        /*width: 95%;*/
+        margin: 4rem auto;
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .post-img img {
+        width: 200px;
+        height: 150px;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 15px;
+        margin-right: 1rem;
+    }
+
+    .blog-item {
+        width: 95%;
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    .blog-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .post-title a {
+        text-decoration: none;
+        color: rgb(65, 65, 65);
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .list {
+        list-style-type: none;
+        margin: 0.5rem auto;
+    }
+
+    .teams{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .team{
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+        padding: 1rem 0;
+    } 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    /*.container {        
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: auto;
+    }
+*/
+
+    .container{
+        margin: 4rem auto;
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .nav{
+        display: flex;
+        /*flex-direction: column*/;
+        background-color: coral;
+        color: floralwhite;
+        font-weight: 500;
+    }
+
+    .nav-menu{
+        display: none;
+        /*margin: 0 auto;*/
+    }
+
+    .menu-icon{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        /*justify-content: flex-end;*/
+        color: white;
+    }
+
+    .post-img img {
+        width: 100px;
+        height: 75px;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 15px;
+        margin-right: 0.5rem;
+    }
+
+    .blog-item {
+        width: 95%;
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    .blog-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .post-title a {
+        text-decoration: none;
+        color: rgb(65, 65, 65);
+        font-size: 1rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .list {
+        list-style-type: none;
+        margin: 0.5rem auto;
+    }
+
+    .teams{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team{
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .team img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .name{
+        font-size: 1.3rem;
+    }
+
+    .title{
+        font-size: 1.3rem;
+    }
+
+    .footer-info {
+        text-align: center;
+        padding: 1rem 0;
+    } 
 }
