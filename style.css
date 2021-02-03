@@ -424,6 +424,9 @@ h2{
         text-align: center;
         /*justify-content: flex-end;*/
         color: white;
+        position: absolute;
+        right: 0;
+        padding: .5rem;
     }
 
     .post-img img {
@@ -493,4 +496,13 @@ h2{
         text-align: center;
         padding: 1rem 0;
     } 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 400px) {
+    .teams {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
